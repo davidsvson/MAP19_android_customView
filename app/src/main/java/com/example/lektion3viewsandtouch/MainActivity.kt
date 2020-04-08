@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //version 3
-
-
+        val flipImage = findViewById<FlipImageView>(R.id.flipImage1)
+        flipImage.onDownImage = R.drawable.cat
 
 
 

@@ -17,6 +17,7 @@
         app:srcCompat="@drawable/dog" />
 
     <com.example.lektion3viewsandtouch.FlipImageView
+        android:id="@+id/flipImage1"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="400dp"
