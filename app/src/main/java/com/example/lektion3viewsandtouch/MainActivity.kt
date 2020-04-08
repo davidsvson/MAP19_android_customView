@@ -15,7 +15,9 @@ class MainActivity : AppCompatActivity() {
 
         //version 3
         val flipImage = findViewById<FlipImageView>(R.id.flipImage1)
-        flipImage.onDownImage = R.drawable.cat
+        flipImage.onDownImage = R.drawable.dog
+
+        flipImage.setImageResource(R.drawable.cat)
 
 
 

@@ -17,6 +17,13 @@ class FlipImageView @JvmOverloads constructor(
        defaultImage = drawable
     }
 
+    override fun setImageResource(resId: Int) {
+        super.setImageResource(resId)
+
+        if (resId != onDownImage)
+            defaultImage = resources.getDrawable(resId, null)
+    }
+
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
 
