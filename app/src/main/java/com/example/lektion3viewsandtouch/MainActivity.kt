@@ -13,8 +13,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //version 3
+
+
+
+
+
+
+
+
+
         val imageView = findViewById<ImageView>(R.id.imageView)
 
+        // version 2 vi använde en imageview och la till en touchlistener på den.
+        // om vi trycker på bilden byts bilden till en katt
+        // och om vi släpper igen byts bilden till en hund
         imageView.setOnTouchListener(object : View.OnTouchListener {
             override fun onTouch(v: View?, event: MotionEvent?): Boolean {
                 when(event?.action) {
